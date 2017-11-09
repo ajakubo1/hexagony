@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+
+    <title>Hexagony prototype Hex Engine</title>
+    <link href="css/tests.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+    <script>
+        window.addEventListener('load', function () {
+            LOAD([
+                generateObject('js/engine.js', 'HexEngine library'),
+                //generateObject('js/tests/assert.js', 'Assert library'),
+                generateObject('js/tests/hexengine/settings.js', 'Hexengine settings'),
+                generateObject('js/tests/hexengine/main.js', 'Main', 'MAIN', LOAD_TYPES.js, true)
+            ]);
+        });
+    </script>
+    <script src="js/loader.js"></script>
+</body>
+</html>
